@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Platter Delight Online</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" >
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container">
+                    <a class="navbar-brand" href="#"> <img alt="" height="30", width="40" src="assets/pdlogo.jpeg" class="rounded-image" > Platter Delight
+                    </a>
+                    <button class="navbar-toggler" type ="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#ordernow">Order Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="container">
+            <div class="hero-section text-center text-black">
+                <div class="container">
+                    <h1>Welcome to Platter Delight</h1>
+                    <p>Made With Care and Served With Love</p> 
+                    <a class="btn btn-primary btn-lg" href="#menu">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Section with Grid -->
+        <section id="menu" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Menu</h2>
+                <div class="menu-grid">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/burger.jpeg" alt="Cheese Burger" >
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Burger</h5>
+                            <p class="card-text">10$</p>
+                            <a class="btn btn-success btn-sm" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/pizza.jpeg" alt="Pepperoni Pizza" >
+                        <div class="card-body">
+                            <h5 class="card-title">Pepperoni Pizza</h5>
+                            <p class="card-text">15$</p>
+                            <a class="btn btn-success btn-sm" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/pasta.jpeg" alt="Creamy Pasta" >
+                        <div class="card-body">
+                            <h5 class="card-title">Creamy Pasta</h5>
+                            <p class="card-text">12$</p>
+                            <a class="btn btn-success btn-sm" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/friescombo.jpeg" alt="Fries Burger" >
+                        <div class="card-body">
+                            <h5 class="card-title">Fries Combo</h5>
+                            <p class="card-text">18$</p>
+                            <a class="btn btn-success btn-sm" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/cheeseveggies.jpeg" alt="Cheese Veggies" >
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Veggies</h5>
+                            <p class="card-text">16$</p>
+                        <a class="btn btn-success btn-sm" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section id="ordernow" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Order Form</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">                        
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea type="text" class="form-control" id="address" placeholder="Enter your address"  rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="selectfood" class="form-label">Select Food Item</label>
+                        <select name="selectfood" class="form-select" id="select" placeholder="Select from dropdown">
+                            <option selected>Select from dropdown</option>
+                            <option value="burger">Cheese Burger</option>
+                            <option value="pizza">Pepperoni Pizza</option>
+                            <option value="pasta">Creamy Pasta</option>
+                            <option value="fries">Fries Combo</option>
+                            <option value="veggies">Cheese Veggies</option>
+                        </select>   
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm" href="#">Place Order</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Order Summary Section -->
+        <section class="py-5 " id="summary" >
+            <div class="container">
+                <h2 class="text-center mb-4">Order Summary</h2>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Item Name</th>
+                            <th>Unit Price</th>
+                            <th>Order Quantity</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Cheese Burger</td>
+                            <td>$10.00</td>
+                            <td>4</td>
+                            <td>$40.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pepperoni Pizza</td>
+                            <td>$15.00</td>
+                            <td>1</td>
+                            <td>$15.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" id="total">Total Amount</td>
+                            <td>$55.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer Section-->
+        <footer class="py-2">
+            <div class="container text-center ">
+                <p>&copy; Platter Delight 2025 All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>  <!-- FontAwesome Icons -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</html>

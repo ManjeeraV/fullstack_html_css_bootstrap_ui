@@ -1,0 +1,104 @@
+/* Page Defaults */
+body {
+    background-color: lightyellow !important;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+.btn.btn-primary {
+    color: #fff;
+    background-color: #0a7c3c;
+    border-color: #cad2d8;
+  }
+
+.btn.btn-primary:focus {
+    color: #fff;
+    background-color: #0c4916;
+    border-color: #cad2d8;
+  }
+
+.btn.btn-primary:hover {
+    color: #fff;
+    background-color: #0c4916;
+    border-color: #cad2d8;
+  }
+
+.rounded-image {
+    border-radius: 20%; 
+    border: 1px solid green; 
+  }
+
+/* Navbar Section */
+.navbar {
+    background: lightgray;
+    margin-left: 10;
+    margin-right: 10;
+  }
+
+/* Hero Section */
+.hero-section {
+    background-image: linear-gradient(to right, rgb(171, 197, 171), lightyellow  );
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+
+/* Menu Section */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+.card img{
+    height:200px;
+    object-fit:cover ;
+  }
+
+.menu-grid .card{
+    background-color: rgb(218, 240, 214);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 5px;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+
+/* Form Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+form textarea {
+    resize: none;
+  }
+
+form label {
+    font-weight: bold;
+  }
+
+/* Table Section */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+table tfoot {
+    font-weight:bold;
+  }
+
+table tfoot #total{
+    text-align:right;
+  }
+
+/* Footer */
+footer {
+    background: #525151;
+    color: white;
+    text-align: center;
+    font-style: italic; 
+  }
