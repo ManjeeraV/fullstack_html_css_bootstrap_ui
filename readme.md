@@ -38,3 +38,5 @@ Create a table to summarize the orders. The table should include:
 
 6. Footer -
 ● Add a footer at the bottom of the page with Copyright information.
+
+To run the application, double click the index.html file to open application in any default browser.
